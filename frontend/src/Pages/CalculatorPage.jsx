@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import './HomePage.css'
-import './ProjectPages.css'
+import "./HomePage.css";
+import "./ProjectPages.css";
 
 const keys = [
   'C', '/', '*', '-',

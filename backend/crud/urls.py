@@ -1,5 +1,5 @@
 """
-URL configuration for BackEndProject project.
+URL configuration for crud project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/6.0/topics/http/urls/
@@ -16,16 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django.views.generic import TemplateView
-
-from django.conf import settings
-from django.conf.urls.static import static
-import os
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', TemplateView.as_view(template_name='index.html'))
 ]
-
-if settings.DEBUG:
-    urlpatterns += static('/assets/', document_root=os.path.join(settings.BASE_DIR, 'Front-End/dist/assets'))
